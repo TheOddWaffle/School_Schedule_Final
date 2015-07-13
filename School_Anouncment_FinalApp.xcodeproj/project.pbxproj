@@ -14,6 +14,8 @@
 		3C6FC0031B503E7200BB125E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6FC0011B503E7200BB125E /* LaunchScreen.storyboard */; };
 		3C6FC00B1B50553800BB125E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FC00A1B50553800BB125E /* ScheduleViewController.swift */; };
 		3C6FC00D1B50554B00BB125E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FC00C1B50554B00BB125E /* HomeViewController.swift */; };
+		F3B10B701B543601003ED35F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10B6F1B543601003ED35F /* Schedule.swift */; };
+		F3B10B721B54384D003ED35F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10B711B54384D003ED35F /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3C6FC0041B503E7200BB125E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C6FC00A1B50553800BB125E /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		3C6FC00C1B50554B00BB125E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3B10B6F1B543601003ED35F /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = ../Schedule.swift; sourceTree = "<group>"; };
+		F3B10B711B54384D003ED35F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,12 @@
 			children = (
 				3C6FBFF81B503E7200BB125E /* AppDelegate.swift */,
 				3C6FBFFA1B503E7200BB125E /* ViewController.swift */,
-				3C6FBFFC1B503E7200BB125E /* Main.storyboard */,
 				3C6FC00A1B50553800BB125E /* ScheduleViewController.swift */,
 				3C6FC00C1B50554B00BB125E /* HomeViewController.swift */,
+				F3B10B6F1B543601003ED35F /* Schedule.swift */,
+				F3B10B711B54384D003ED35F /* Functions.swift */,
 				3C6FBFFF1B503E7200BB125E /* Assets.xcassets */,
+				3C6FBFFC1B503E7200BB125E /* Main.storyboard */,
 				3C6FC0011B503E7200BB125E /* LaunchScreen.storyboard */,
 				3C6FC0041B503E7200BB125E /* Info.plist */,
 			);
@@ -143,7 +149,9 @@
 				3C6FC00B1B50553800BB125E /* ScheduleViewController.swift in Sources */,
 				3C6FBFFB1B503E7200BB125E /* ViewController.swift in Sources */,
 				3C6FBFF91B503E7200BB125E /* AppDelegate.swift in Sources */,
+				F3B10B701B543601003ED35F /* Schedule.swift in Sources */,
 				3C6FC00D1B50554B00BB125E /* HomeViewController.swift in Sources */,
+				F3B10B721B54384D003ED35F /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 				3C6FC0091B503E7200BB125E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

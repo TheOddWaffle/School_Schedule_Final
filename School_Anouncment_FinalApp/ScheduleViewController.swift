@@ -42,24 +42,16 @@ class ScheduleViewController: UIViewController {
         B3text = B3.text!
         B4text = B4.text!
         
+        
+        
+
+
+        
+        
+        
+        let mySchedule = Schedule(classListADay: ["\(A1text)", "\(A2text)", "\(A3text)", "\(A4text)"], classListBDay: ["\(B1text)", "\(B2text)", "\(B3text)", "\(B4text)"], start: NSDate())
+        save(mySchedule, key: "mySchedule")
         self.performSegueWithIdentifier("segue1", sender: ScheduleViewController.self)
-        
-        
-        
-       
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! HomeViewController
-        dvc.A1text = A1text
-        dvc.A2text = A2text
-        dvc.A3text = A3text
-        dvc.A4text = A4text
-        dvc.B1text = B1text
-        dvc.B2text = B2text
-        dvc.B3text = B3text
-        dvc.B4text = B4text
         
     }
 }
