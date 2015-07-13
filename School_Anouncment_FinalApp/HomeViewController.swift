@@ -13,8 +13,12 @@ class HomeViewController: UIViewController {
     var classesArray = ["egg", "duck", "luck"]
 
     override func viewDidLoad() {
+        
+        //createSchedule()
+        //view1.backgroundColor = UIColor(red: 239/255, green: 255/255, blue: 192/255, alpha: 1.0)
+       
         super.viewDidLoad()
-        createSchedule()
+        self.view.setNeedsDisplay()
             }
 
     func createSchedule() {
