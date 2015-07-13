@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var classesArray = ["egg", "duck", "suck"]
+    var classesArray = ["egg", "duck", "luck"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +20,18 @@ class HomeViewController: UIViewController {
     func createSchedule() {
         var xLocation = CGFloat(50)
         for course in classesArray{
-            var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
-            label.center = CGPointMake(xLocation, 100)
-            label.textAlignment = NSTextAlignment.Center
             
+            
+            
+        
+            //creates labels for the schedule
+            var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
+            label.center = CGPointMake(xLocation, 150)
+            label.textAlignment = NSTextAlignment.Center
             label.text = "\(course)"
             self.view.addSubview(label)
             xLocation = CGFloat(Int(xLocation) + 60)
         }
     }
-    
+
 }
