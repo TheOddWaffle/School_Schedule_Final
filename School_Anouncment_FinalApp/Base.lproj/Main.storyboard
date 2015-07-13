@@ -199,15 +199,12 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEf-VC-kzH">
-                                                    <rect key="frame" x="35" y="43" width="120" height="89"/>
+                                                    <rect key="frame" x="35" y="43" width="130" height="89"/>
+                                                    <color key="backgroundColor" red="0.7626271173221737" green="1" blue="0.779676689735601" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxc-iU-rrp">
-                                                    <rect key="frame" x="175" y="43" width="120" height="89"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-Wq-oBF">
-                                                    <rect key="frame" x="309" y="43" width="120" height="89"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="171" y="43" width="130" height="89"/>
+                                                    <color key="backgroundColor" red="1" green="0.62919705517309343" blue="0.58040294657713054" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-Ut-Mp7">
                                                     <rect key="frame" x="446" y="43" width="120" height="89"/>
@@ -231,14 +228,18 @@
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RyH-py-tNu">
-                                                                        <rect key="frame" x="472" y="43" width="120" height="89"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <rect key="frame" x="470" y="43" width="130" height="89"/>
+                                                                        <color key="backgroundColor" red="1" green="0.76957680637484782" blue="0.4333938289994036" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </view>
                                                                 </subviews>
                                                             </tableViewCellContentView>
                                                         </tableViewCell>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-Wq-oBF">
+                                                    <rect key="frame" x="308" y="43" width="130" height="89"/>
+                                                    <color key="backgroundColor" red="0.67201177234927956" green="0.60804162282498486" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
