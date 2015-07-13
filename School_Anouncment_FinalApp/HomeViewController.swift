@@ -11,10 +11,19 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var classesArray = ["egg", "duck", "suck"]
+    
+    @IBOutlet var view1: UIView!
+    @IBOutlet var view2: UIView!
+    @IBOutlet var view3: UIView!
+    @IBOutlet var view4: UIView!
 
     override func viewDidLoad() {
+        
+        //createSchedule()
+        //view1.backgroundColor = UIColor(red: 239/255, green: 255/255, blue: 192/255, alpha: 1.0)
+       
         super.viewDidLoad()
-        createSchedule()
+        self.view.setNeedsDisplay()
             }
 
     func createSchedule() {
