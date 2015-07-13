@@ -10,32 +10,32 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var classesArray = ["egg", "duck", "luck"]
-
+    var classesArray = ["egg", "duck", "suck"]
+    
+    @IBOutlet var class1: UILabel!
+    @IBOutlet var class2: UILabel!
+    @IBOutlet var class3: UILabel!
+    @IBOutlet var class4: UILabel!
+    var A1text = ""
+    var A2text = ""
+    var A3text = ""
+    var A4text = ""
+    var B1text = ""
+    var B2text = ""
+    var B3text = ""
+    var B4text = ""
+    var dayCounter = "A"
+    
+    
     override func viewDidLoad() {
-        
-        //createSchedule()
-        //view1.backgroundColor = UIColor(red: 239/255, green: 255/255, blue: 192/255, alpha: 1.0)
-       
         super.viewDidLoad()
-        self.view.setNeedsDisplay()
-            }
-
-    func createSchedule() {
-        var xLocation = CGFloat(50)
-        for course in classesArray{
-            
-            
-            
-        
-            //creates labels for the schedule
-            var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
-            label.center = CGPointMake(xLocation, 150)
-            label.textAlignment = NSTextAlignment.Center
-            label.text = "\(course)"
-            self.view.addSubview(label)
-            xLocation = CGFloat(Int(xLocation) + 60)
+        print(A1text)
+        if dayCounter == "A" {
+            class1.text = A1text
+            class2.text = A2text
+            class3.text = A3text
+            class4.text = A4text
+            print(A1text)
         }
-    }
-
+        }
 }
