@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -165,11 +165,22 @@
                     <navigationItem key="navigationItem" id="fyH-aZ-1FO">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="xKv-ib-eP0">
                             <connections>
-                                <segue destination="QoY-sC-8lo" kind="show" id="y01-jf-AaK"/>
+                                <action selector="onDoneButtonPressed:" destination="R58-Zu-PjQ" id="76y-u5-49Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="A1" destination="ub3-aY-cru" id="0Ob-VV-Sip"/>
+                        <outlet property="A2" destination="x1K-uU-eX2" id="bqv-Y9-eR3"/>
+                        <outlet property="A3" destination="rea-7I-pku" id="LvM-7H-ezr"/>
+                        <outlet property="A4" destination="0eX-aJ-VaL" id="7X2-Kt-5UY"/>
+                        <outlet property="B1" destination="7Nd-WT-Nh4" id="XOK-nG-nVx"/>
+                        <outlet property="B2" destination="HsO-Kt-Xb7" id="DYS-5F-XnQ"/>
+                        <outlet property="B3" destination="CbK-fJ-9D8" id="srN-vk-Dfz"/>
+                        <outlet property="B4" destination="Kix-0q-FhK" id="tg4-ga-hAO"/>
+                        <segue destination="QoY-sC-8lo" kind="show" identifier="segue1" id="uWM-PO-TYC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8R-Ts-Jmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +201,7 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YmN-zH-1pY">
                                 <rect key="frame" x="13" y="174" width="140" height="94"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-4K-MMK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-4K-MMK">
                                         <rect key="frame" x="49" y="36" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,11 +209,14 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FfX-4K-MMK" firstAttribute="centerX" secondItem="YmN-zH-1pY" secondAttribute="centerX" id="udW-dF-Njo"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StN-XY-6c9">
                                 <rect key="frame" x="161" y="174" width="140" height="94"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-aI-x3l">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-aI-x3l">
                                         <rect key="frame" x="49" y="36" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,11 +224,14 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ACM-aI-x3l" firstAttribute="centerX" secondItem="StN-XY-6c9" secondAttribute="centerX" id="dTK-DC-RHG"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74z-VA-POk">
                                 <rect key="frame" x="307" y="174" width="140" height="94"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jte-wy-uh7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jte-wy-uh7">
                                         <rect key="frame" x="49" y="36" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,11 +239,14 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jte-wy-uh7" firstAttribute="centerX" secondItem="74z-VA-POk" secondAttribute="centerX" id="Bi7-5W-JF8"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-0d-5Fd">
                                 <rect key="frame" x="455" y="174" width="140" height="94"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-Y1-xhO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-Y1-xhO">
                                         <rect key="frame" x="49" y="36" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,6 +254,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wU9-Y1-xhO" firstAttribute="centerX" secondItem="Frc-0d-5Fd" secondAttribute="centerX" id="RNl-b8-FSX"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,10 +275,16 @@
                             <constraint firstItem="StN-XY-6c9" firstAttribute="width" secondItem="74z-VA-POk" secondAttribute="width" id="zoA-UQ-uLo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="class1" destination="FfX-4K-MMK" id="kdZ-QT-Tuc"/>
+                        <outlet property="class2" destination="ACM-aI-x3l" id="eqt-zU-aTL"/>
+                        <outlet property="class3" destination="jte-wy-uh7" id="RFk-Vk-MZj"/>
+                        <outlet property="class4" destination="wU9-Y1-xhO" id="Sss-iS-X21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5i6-od-eBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2621" y="398"/>
+            <point key="canvasLocation" x="2524" y="398"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWV-nA-sd9">
