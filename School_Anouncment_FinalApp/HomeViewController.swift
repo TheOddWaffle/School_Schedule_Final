@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class HomeViewController: UIViewController {
     
@@ -57,8 +58,10 @@ class HomeViewController: UIViewController {
     }
     
     func checkDay() {
-        let date = NSDate()
-        print(date)
+        let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
+        let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
+        let dateObject = myNewSchedule?.startingDate
+        
         
     }
 }
