@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4754871B557DC7001C0C14 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4754861B557DC7001C0C14 /* ContactUsViewController.swift */; };
 		3C6FBFF91B503E7200BB125E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FBFF81B503E7200BB125E /* AppDelegate.swift */; };
 		3C6FBFFB1B503E7200BB125E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FBFFA1B503E7200BB125E /* ViewController.swift */; };
 		3C6FBFFE1B503E7200BB125E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6FBFFC1B503E7200BB125E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C4754861B557DC7001C0C14 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		3C6FBFF51B503E7200BB125E /* School_Anouncment_FinalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = School_Anouncment_FinalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6FBFF81B503E7200BB125E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C6FBFFA1B503E7200BB125E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				F3B10B711B54384D003ED35F /* Functions.swift */,
 				3C6FBFFF1B503E7200BB125E /* Assets.xcassets */,
 				3C6FBFFC1B503E7200BB125E /* Main.storyboard */,
+				3C4754861B557DC7001C0C14 /* ContactUsViewController.swift */,
 				3C6FC0011B503E7200BB125E /* LaunchScreen.storyboard */,
 				3C6FC0041B503E7200BB125E /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				3C6FC00B1B50553800BB125E /* ScheduleViewController.swift in Sources */,
 				3C6FBFFB1B503E7200BB125E /* ViewController.swift in Sources */,
+				3C4754871B557DC7001C0C14 /* ContactUsViewController.swift in Sources */,
 				3C6FBFF91B503E7200BB125E /* AppDelegate.swift in Sources */,
 				F3B10B701B543601003ED35F /* Schedule.swift in Sources */,
 				3C6FC00D1B50554B00BB125E /* HomeViewController.swift in Sources */,

@@ -317,10 +317,10 @@
             </objects>
             <point key="canvasLocation" x="2524" y="398"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Us View Controller-->
         <scene sceneID="wzx-1y-TVO">
             <objects>
-                <viewController id="p1G-0T-uhI" sceneMemberID="viewController">
+                <viewController id="p1G-0T-uhI" customClass="ContactUsViewController" customModule="School_Anouncment_FinalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y4Q-NZ-2ur"/>
                         <viewControllerLayoutGuide type="bottom" id="COj-03-l0R"/>
@@ -329,23 +329,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="guF-gY-DqI">
-                                <rect key="frame" x="213" y="542" width="195" height="48"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work : (+1) 224 432-7647" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-g8-D4o">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="24"/>
-                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax      : (+1) 224 432-7647" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woK-RI-Nu9">
-                                        <rect key="frame" x="0.0" y="24" width="195" height="24"/>
-                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v2p-ja-CIC">
                                 <rect key="frame" x="160" y="160" width="300" height="30"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
@@ -356,13 +339,17 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="E-mail Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-K8-Eah">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="E-mail Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-K8-Eah">
                                 <rect key="frame" x="160" y="235" width="300" height="30"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Question" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4al-nj-Hjb">
-                                <rect key="frame" x="160" y="304" width="300" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Question" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4al-nj-Hjb">
+                                <rect key="frame" x="160" y="273" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="02c-fp-QCE"/>
+                                    <constraint firstAttribute="height" constant="30" id="2A5-pV-26g"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                             </textField>
@@ -373,22 +360,72 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJy-7K-oRZ">
-                                <rect key="frame" x="277" y="362" width="47" height="30"/>
+                                <rect key="frame" x="277" y="467" width="47" height="30"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="p1G-0T-uhI" eventType="touchUpInside" id="RBK-2T-crR"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-5v-BWl">
+                                <rect key="frame" x="212" y="520" width="196.5" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-wU-EsT">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-g8-D4o">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9R-vq-zvh">
+                                                <rect key="frame" x="65.5" y="0.0" width="131" height="30"/>
+                                                <state key="normal" title="(+1) 224 432-7647"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-rq-TQN">
+                                        <rect key="frame" x="0.0" y="30" width="196" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax     : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woK-RI-Nu9">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abx-JG-ZWe">
+                                                <rect key="frame" x="65" y="0.0" width="131" height="30"/>
+                                                <state key="normal" title="(+1) 224 432-7647"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="riQ-K8-Eah" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="1hs-BR-yOH"/>
+                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="Fv4-g7-hiH" secondAttribute="leading" id="AkM-RB-Sd0"/>
+                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="v2p-ja-CIC" secondAttribute="leading" id="Geq-9I-VKY"/>
+                            <constraint firstItem="4al-nj-Hjb" firstAttribute="top" secondItem="OE0-Dg-V9Z" secondAttribute="top" constant="273" id="Hef-EW-jan"/>
+                            <constraint firstItem="4al-nj-Hjb" firstAttribute="top" secondItem="riQ-K8-Eah" secondAttribute="bottom" constant="8" symbolic="YES" id="I41-Nc-6GI"/>
+                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="riQ-K8-Eah" secondAttribute="leading" id="RDJ-5H-tAx"/>
                             <constraint firstItem="4al-nj-Hjb" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="UUh-z3-4ES"/>
                             <constraint firstItem="4NV-Ad-oSe" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="Y8U-25-Oir"/>
-                            <constraint firstItem="guF-gY-DqI" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="cjB-MG-auO"/>
                             <constraint firstItem="kJy-7K-oRZ" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="ehG-2W-5VO"/>
                             <constraint firstItem="Fv4-g7-hiH" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="qSO-Wh-B7f"/>
+                            <constraint firstItem="WfN-5v-BWl" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="rhT-iD-653"/>
                             <constraint firstItem="v2p-ja-CIC" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="wmg-Yw-a5E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="riQ-K8-Eah" id="JIC-eY-EJS"/>
+                        <outlet property="nameText" destination="v2p-ja-CIC" id="tZI-gc-gIW"/>
+                        <outlet property="phoneText" destination="Fv4-g7-hiH" id="Fij-0x-Sjv"/>
+                        <outlet property="questionText" destination="4al-nj-Hjb" id="D7a-Y9-Cq7"/>
+                        <outlet property="subject" destination="4al-nj-Hjb" id="VfT-bV-jjS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKg-MA-jnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
