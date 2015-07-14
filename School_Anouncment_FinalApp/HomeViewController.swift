@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
     var B2text = ""
     var B3text = ""
     var B4text = ""
-    var dayCounter = "A"
+    var dayCounter = "C"
     let defaults = NSUserDefaults.standardUserDefaults()
     
     
@@ -60,8 +60,31 @@ class HomeViewController: UIViewController {
     func checkDay() {
         let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
         let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
-        let dateObject = myNewSchedule?.startingDate
-        
-        
+        let dateFormatter = NSDateFormatter()
+        let startDate = myNewSchedule?.startingDate
+        let endDate = NSDate()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let cal = NSCalendar.currentCalendar()
+        let unit:NSCalendarUnit = .Day
+        let components = cal.components(unit, fromDate: startDate!, toDate: endDate, options: NSCalendarOptions(rawValue: 0))
+        let differenceOfDays = "\(components)"
+        print(differenceOfDays)
+        let differenceArray = Array(differenceOfDays.characters)
+        var finalDifference = ""
+        for(var i = differenceArray.count - 1; i > 0 ; i--) {
+            if differenceArray[i] == " " {
+                break
+            }
+            else {
+                finalDifference = "\(differenceArray[i])" + finalDifference
+                print(finalDifference)
+            }
+        }
+        if Int(finalDifference)! % 2 == 0 {
+            dayCounter = "A"
+        }
+        else{
+            dayCounter = "B"
+        }
     }
 }
