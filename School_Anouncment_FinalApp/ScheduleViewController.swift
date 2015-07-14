@@ -42,14 +42,7 @@ class ScheduleViewController: UIViewController {
         B3text = B3.text!
         B4text = B4.text!
         
-        
-        
-
-
-        
-        
-        
-        let mySchedule = Schedule(classListADay: ["\(A1text)", "\(A2text)", "\(A3text)", "\(A4text)"], classListBDay: ["\(B1text)", "\(B2text)", "\(B3text)", "\(B4text)"], start: NSDate())
+        let mySchedule = Schedule(classListADay: [A1text, A2text, A3text, A4text], classListBDay: [B1text, B2text, B3text, B4text], start: NSDate())
         save(mySchedule, key: "mySchedule")
         self.performSegueWithIdentifier("segue1", sender: ScheduleViewController.self)
         

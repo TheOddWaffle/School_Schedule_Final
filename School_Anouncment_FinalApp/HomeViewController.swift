@@ -34,25 +34,29 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
         let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
-        print(myNewSchedule?.classesB)
+        
 
         
         
         checkDay()
         if dayCounter == "A" {
-            class1.text = A1text
-            class2.text = A2text
-            class3.text = A3text
-            class4.text = A4text
-            print(A1text)
+            let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
+            let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
+            var aDayArray : Array = (myNewSchedule?.classesA)!
+            class1.text = aDayArray[0]
+            class2.text = aDayArray[1]
+            class3.text = aDayArray[2]
+            class4.text = aDayArray[3]
             dayAorB.text = dayCounter
         }
         else {
-            class1.text = B1text
-            class2.text = B2text
-            class3.text = B3text
-            class4.text = B4text
-            print(A1text)
+            let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
+            let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
+            var bDayArray : Array = (myNewSchedule?.classesB)!
+            class1.text = bDayArray[0]
+            class2.text = bDayArray[1]
+            class3.text = bDayArray[2]
+            class4.text = bDayArray[3]
             dayAorB.text = dayCounter
         }
     }
@@ -68,7 +72,6 @@ class HomeViewController: UIViewController {
         let unit:NSCalendarUnit = .Day
         let components = cal.components(unit, fromDate: startDate!, toDate: endDate, options: NSCalendarOptions(rawValue: 0))
         let differenceOfDays = "\(components)"
-        print(differenceOfDays)
         let differenceArray = Array(differenceOfDays.characters)
         var finalDifference = ""
         for(var i = differenceArray.count - 1; i > 0 ; i--) {
