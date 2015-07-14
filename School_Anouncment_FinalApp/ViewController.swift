@@ -14,6 +14,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        print("hello")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let dataCameBack = defaults.objectForKey("mySchedule"){
+            self.performSegueWithIdentifier("initialToHome", sender: self)
+            print("1")
+        }
+        else {
+            print("2")
+        }
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
