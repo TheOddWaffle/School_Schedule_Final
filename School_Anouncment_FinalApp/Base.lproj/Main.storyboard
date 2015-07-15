@@ -45,22 +45,35 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="F7q-WT-EoG">
+                                <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="458664524.61152101">
+                                    <!--2015-07-15 14:48:44 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gLj-eq-wyC"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XsG-wU-QjR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="89b-H0-LW6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F7q-WT-EoG" secondAttribute="trailing" constant="-20" id="OHx-78-bL7"/>
+                            <constraint firstItem="F7q-WT-EoG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Rb2-Lc-BO3"/>
                             <constraint firstItem="f8x-90-he5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jrV-Nj-Sqi"/>
                             <constraint firstItem="aWj-lQ-pda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9u-sq-AND"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F7q-WT-EoG" secondAttribute="bottom" id="q13-1w-tb5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uI8-dC-xXU">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Q1s-e7-5p7">
                             <connections>
-                                <segue destination="R58-Zu-PjQ" kind="show" id="7YE-kX-gNG"/>
+                                <segue destination="R58-Zu-PjQ" kind="show" identifier="scheduleSegue" id="7YE-kX-gNG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="uiDatePicker" destination="F7q-WT-EoG" id="mOs-dc-VQ1"/>
                         <segue destination="QoY-sC-8lo" kind="show" identifier="initialToHome" animates="NO" id="tWs-w7-V9J"/>
                     </connections>
                 </viewController>
