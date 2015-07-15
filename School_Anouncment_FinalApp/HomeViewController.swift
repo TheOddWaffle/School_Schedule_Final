@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     var classesArray = ["egg", "duck", "suck"]
     
+    @IBOutlet var webView: UIWebView!
     @IBOutlet var dayAorB: UILabel!
     @IBOutlet var class1: UILabel!
     @IBOutlet var class2: UILabel!
@@ -28,12 +29,18 @@ class HomeViewController: UIViewController {
     var B4text = ""
     var dayCounter = "C"
     let defaults = NSUserDefaults.standardUserDefaults()
+    let url = "https://google.com"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
         let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
+        
+        //loads web page
+        let requestURL = NSURL(string:url)
+        let request = NSURLRequest(URL: requestURL!)
+        webView.loadRequest(request)
         
 
         

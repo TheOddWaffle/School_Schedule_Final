@@ -23,14 +23,14 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         print("hello")
-        let defaults = NSUserDefaults.standardUserDefaults()
+        /*let defaults = NSUserDefaults.standardUserDefaults()
         if let dataCameBack = defaults.objectForKey("mySchedule"){
             self.performSegueWithIdentifier("initialToHome", sender: self)
             print("1")
         }
         else {
             print("2")
-        } 
+        } */
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
