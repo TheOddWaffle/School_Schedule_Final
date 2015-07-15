@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -310,7 +315,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtC-tj-6u9">
                                         <rect key="frame" x="21" y="6" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -325,11 +330,11 @@
                                 <rect key="frame" x="0.0" y="334" width="600" height="266"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3b-lA-Hot">
-                                <rect key="frame" x="517" y="72" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-QW-aYi">
+                                <rect key="frame" x="502" y="72" width="78" height="30"/>
                                 <state key="normal" title="Contact Us"/>
                                 <connections>
-                                    <segue destination="dAA-xa-Tt4" kind="show" id="Ag6-0V-9RJ"/>
+                                    <segue destination="dAA-xa-Tt4" kind="show" id="cOj-k9-i2E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -341,15 +346,16 @@
                             <constraint firstItem="StN-XY-6c9" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="110" id="3EK-X6-6tz"/>
                             <constraint firstItem="035-ia-bbz" firstAttribute="top" secondItem="aSz-N6-qWl" secondAttribute="bottom" id="4ut-XV-sYg"/>
                             <constraint firstItem="74z-VA-POk" firstAttribute="leading" secondItem="StN-XY-6c9" secondAttribute="trailing" constant="6" id="Bkr-t3-j3D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vLU-QW-aYi" secondAttribute="trailing" id="CXp-NP-cNF"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="top" secondItem="yqP-Ja-aQI" secondAttribute="bottom" constant="8" id="DOI-hA-iSY"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="110" id="DcC-0w-auP"/>
                             <constraint firstItem="74z-VA-POk" firstAttribute="width" secondItem="Frc-0d-5Fd" secondAttribute="width" id="Frh-NW-thT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Frc-0d-5Fd" secondAttribute="trailing" constant="-15" id="Hyo-PH-56W"/>
+                            <constraint firstItem="Frc-0d-5Fd" firstAttribute="top" secondItem="vLU-QW-aYi" secondAttribute="bottom" constant="72" id="LCD-lq-Sut"/>
                             <constraint firstItem="74z-VA-POk" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="110" id="Ry2-fF-nr8"/>
                             <constraint firstItem="aSz-N6-qWl" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-20" id="U59-yQ-YSa"/>
+                            <constraint firstItem="vLU-QW-aYi" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="8" id="XaY-66-qeF"/>
                             <constraint firstItem="yqP-Ja-aQI" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-7" id="asq-UZ-E0m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="i3b-lA-Hot" secondAttribute="trailing" constant="-15" id="f80-o1-F6E"/>
-                            <constraint firstItem="i3b-lA-Hot" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="8" id="hrH-Ay-SNO"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="width" secondItem="StN-XY-6c9" secondAttribute="width" id="jNp-Mq-DeD"/>
                             <constraint firstItem="Frc-0d-5Fd" firstAttribute="leading" secondItem="74z-VA-POk" secondAttribute="trailing" constant="8" id="oZI-oW-iLk"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-7" id="owT-CZ-kzc"/>
@@ -388,7 +394,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Subject" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-8Y-p7n">
-                                <rect key="frame" x="150" y="178" width="300" height="30"/>
+                                <rect key="frame" x="150" y="183" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="nQ8-XO-gj6"/>
                                     <constraint firstAttribute="height" constant="30" id="sPc-aX-Scc"/>
@@ -396,36 +402,44 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-DF-NlG">
-                                <rect key="frame" x="224" y="107" width="152" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-DF-NlG">
+                                <rect key="frame" x="216" y="97" width="169" height="52"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="6tc-rb-Okr"/>
+                                    <constraint firstAttribute="width" constant="169" id="Ksn-jr-nnP"/>
                                     <constraint firstAttribute="width" constant="152" id="eDH-9I-M4g"/>
                                     <constraint firstAttribute="height" constant="31" id="nbQ-Cs-Ewo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eDH-9I-M4g"/>
+                                        <exclude reference="nbQ-Cs-Ewo"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JA1-ig-WYU">
                                 <rect key="frame" x="202" y="520" width="197" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-ei-Mmh">
-                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                        <rect key="frame" x="0.5" y="0.0" width="196.5" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-bp-JlX">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-QD-JQp">
-                                                <rect key="frame" x="66" y="0.0" width="131" height="30"/>
+                                                <rect key="frame" x="65.5" y="0.0" width="131" height="30"/>
                                                 <state key="normal" title="(+1) 224 432-7647"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNd-4E-0rY">
-                                        <rect key="frame" x="1" y="30" width="196" height="30"/>
+                                        <rect key="frame" x="0.5" y="30" width="196" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax     : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-1l-Mbo">
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
@@ -441,14 +455,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-KJ-shc">
-                                <rect key="frame" x="150" y="230" width="300" height="198"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-KJ-shc">
+                                <rect key="frame" x="150" y="235" width="300" height="198"/>
                                 <color key="backgroundColor" red="0.70850139519999999" green="0.70020002150000005" blue="0.71628393310000005" alpha="0.19" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vva-4h-9KP">
-                                <rect key="frame" x="277" y="454" width="36" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vva-4h-9KP">
+                                <rect key="frame" x="267" y="450" width="67" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="bGR-bt-dfU"/>
+                                    <constraint firstAttribute="height" constant="39" id="soD-4c-jBS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendMail:" destination="dAA-xa-Tt4" eventType="touchUpInside" id="WN2-jk-eIW"/>
@@ -457,17 +476,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JA1-ig-WYU" firstAttribute="top" secondItem="vva-4h-9KP" secondAttribute="bottom" constant="31" id="3bC-sD-0jJ"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="MQv-DF-NlG" secondAttribute="centerX" id="4ky-Zv-bT9"/>
+                            <constraint firstItem="MQv-DF-NlG" firstAttribute="centerX" secondItem="aq8-8Y-p7n" secondAttribute="centerX" id="7Qj-gP-vwg"/>
                             <constraint firstItem="JA1-ig-WYU" firstAttribute="centerX" secondItem="D4L-KJ-shc" secondAttribute="centerX" id="93g-DV-iYB"/>
+                            <constraint firstItem="vva-4h-9KP" firstAttribute="top" secondItem="D4L-KJ-shc" secondAttribute="bottom" constant="17" id="Czd-BC-Kii"/>
                             <constraint firstItem="D4L-KJ-shc" firstAttribute="top" secondItem="aq8-8Y-p7n" secondAttribute="bottom" constant="22" id="FeF-3W-9kQ"/>
+                            <constraint firstItem="aq8-8Y-p7n" firstAttribute="top" secondItem="MQv-DF-NlG" secondAttribute="bottom" constant="34" id="LlO-u8-DJ3"/>
+                            <constraint firstItem="MQv-DF-NlG" firstAttribute="top" secondItem="pKp-k6-byp" secondAttribute="bottom" constant="33" id="MVu-VD-Mi2"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="leading" secondItem="D4L-KJ-shc" secondAttribute="leading" id="Ubj-Iz-h6I"/>
                             <constraint firstItem="D4L-KJ-shc" firstAttribute="trailing" secondItem="aq8-8Y-p7n" secondAttribute="trailing" id="gXs-N0-brM"/>
                             <constraint firstAttribute="bottom" secondItem="JA1-ig-WYU" secondAttribute="bottom" constant="20" symbolic="YES" id="ki9-YI-5O9"/>
                             <constraint firstItem="JA1-ig-WYU" firstAttribute="leading" secondItem="1qF-j5-wQh" secondAttribute="leading" constant="202" id="mpH-r9-vs1"/>
+                            <constraint firstItem="vva-4h-9KP" firstAttribute="centerX" secondItem="JA1-ig-WYU" secondAttribute="centerX" id="sPJ-SL-ulZ"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="top" secondItem="MQv-DF-NlG" secondAttribute="bottom" constant="40" id="tTH-vM-Qkl"/>
                             <constraint firstItem="MQv-DF-NlG" firstAttribute="top" secondItem="pKp-k6-byp" secondAttribute="bottom" constant="43" id="z1j-ZF-Frz"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="1qF-j5-wQh" secondAttribute="centerX" id="ztK-tG-ASM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4ky-Zv-bT9"/>
+                                <exclude reference="tTH-vM-Qkl"/>
+                                <exclude reference="z1j-ZF-Frz"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="body" destination="D4L-KJ-shc" id="tV3-tn-jyp"/>
