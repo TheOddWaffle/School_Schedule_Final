@@ -11,7 +11,6 @@ import Foundation
 
 class HomeViewController: UIViewController {
     
-    var classesArray = ["egg", "duck", "suck"]
     
     @IBOutlet var webView: UIWebView!
     @IBOutlet var dayAorB: UILabel!
@@ -47,7 +46,7 @@ class HomeViewController: UIViewController {
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
         checkDay()
-        //checkTime()
+        checkTime()
         if dayCounter == "A" {
             let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
             let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
@@ -163,6 +162,7 @@ class HomeViewController: UIViewController {
             class2Image.hidden = true
             class3Image.hidden = true
             class4Image.hidden = true
+            print("nothing")
         }
             
     }

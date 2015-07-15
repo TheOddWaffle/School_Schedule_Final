@@ -225,18 +225,17 @@
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="mv0-c4-lPP">
                                         <rect key="frame" x="49" y="74" width="43" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="Cam-3t-KhM"/>
+                                            <constraint firstAttribute="height" constant="20" id="uxW-bE-X2n"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.65626281953075605" green="1" blue="0.5429296568025348" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="mv0-c4-lPP" firstAttribute="centerX" secondItem="YmN-zH-1pY" secondAttribute="centerX" id="0pj-iU-Lzq"/>
                                     <constraint firstItem="FfX-4K-MMK" firstAttribute="centerX" secondItem="YmN-zH-1pY" secondAttribute="centerX" id="Zz5-2n-nhu"/>
-                                    <constraint firstAttribute="bottom" secondItem="mv0-c4-lPP" secondAttribute="bottom" id="rml-ag-BrW"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="rml-ag-BrW"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StN-XY-6c9">
                                 <rect key="frame" x="161" y="174" width="140" height="94"/>
@@ -247,11 +246,18 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-gE-chD">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="rqE-gE-chD">
                                         <rect key="frame" x="49" y="74" width="43" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="9LL-BT-Nf9"/>
+                                            <constraint firstAttribute="height" constant="20" id="pj1-Oz-BNr"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.72482828252008757" blue="0.4146218317754724" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rqE-gE-chD" firstAttribute="centerX" secondItem="StN-XY-6c9" secondAttribute="centerX" id="x2U-La-uhC"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74z-VA-POk">
                                 <rect key="frame" x="307" y="174" width="140" height="94"/>
@@ -262,13 +268,18 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="i9A-WD-dLE">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="i9A-WD-dLE">
                                         <rect key="frame" x="49" y="74" width="43" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="1Nc-hg-1Rc"/>
+                                            <constraint firstAttribute="height" constant="20" id="S2n-gx-8iy"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.56430184916487847" green="0.85247123932923141" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="jte-wy-uh7" firstAttribute="centerX" secondItem="74z-VA-POk" secondAttribute="centerX" id="Bi7-5W-JF8"/>
+                                    <constraint firstItem="i9A-WD-dLE" firstAttribute="centerX" secondItem="74z-VA-POk" secondAttribute="centerX" id="zxG-tV-Xrl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-0d-5Fd">
@@ -280,12 +291,17 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="PWg-Yl-Djz">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="PS_Triangle" translatesAutoresizingMaskIntoConstraints="NO" id="PWg-Yl-Djz">
                                         <rect key="frame" x="49" y="74" width="43" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="43" id="6u1-Hb-joy"/>
+                                            <constraint firstAttribute="height" constant="20" id="EQb-yx-8e6"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.49702861852148539" blue="0.48458022307289683" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="PWg-Yl-Djz" firstAttribute="centerX" secondItem="Frc-0d-5Fd" secondAttribute="centerX" id="NYp-bq-Oum"/>
                                     <constraint firstItem="wU9-Y1-xhO" firstAttribute="centerX" secondItem="Frc-0d-5Fd" secondAttribute="centerX" id="dVR-hJ-8Sn"/>
                                 </constraints>
                             </view>
