@@ -474,7 +474,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JA1-ig-WYU" firstAttribute="top" secondItem="vva-4h-9KP" secondAttribute="bottom" constant="31" id="3bC-sD-0jJ"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="MQv-DF-NlG" secondAttribute="centerX" id="4ky-Zv-bT9"/>
