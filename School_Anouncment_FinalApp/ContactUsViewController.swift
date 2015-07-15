@@ -17,6 +17,8 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
     
     @IBOutlet weak var body: UITextView!
     
+    @IBAction func sendMail(sender: UIButton) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
