@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dgd-cn-xc0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -290,11 +290,11 @@
                                     <constraint firstAttribute="width" constant="100" id="sw1-P8-jA9"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhi-fS-9vK">
-                                <rect key="frame" x="261" y="550" width="78" height="30"/>
-                                <state key="normal" title="Contact Us"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3b-lA-Hot">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="p1G-0T-uhI" kind="show" id="94L-ax-WVA"/>
+                                    <segue destination="dAA-xa-Tt4" kind="show" id="0OE-af-IIP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -331,83 +331,73 @@
             <point key="canvasLocation" x="2524" y="398"/>
         </scene>
         <!--Contact Us View Controller-->
-        <scene sceneID="wzx-1y-TVO">
+        <scene sceneID="5UB-Sb-02I">
             <objects>
-                <viewController id="p1G-0T-uhI" customClass="ContactUsViewController" customModule="School_Anouncment_FinalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dAA-xa-Tt4" customClass="ContactUsViewController" customModule="School_Anouncment_FinalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y4Q-NZ-2ur"/>
-                        <viewControllerLayoutGuide type="bottom" id="COj-03-l0R"/>
+                        <viewControllerLayoutGuide type="top" id="pKp-k6-byp"/>
+                        <viewControllerLayoutGuide type="bottom" id="LDa-Mr-fbA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OE0-Dg-V9Z">
+                    <view key="view" contentMode="scaleToFill" id="1qF-j5-wQh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v2p-ja-CIC">
-                                <rect key="frame" x="160" y="160" width="300" height="30"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fv4-g7-hiH">
-                                <rect key="frame" x="160" y="198" width="300" height="30"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="E-mail Address" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-K8-Eah">
-                                <rect key="frame" x="160" y="235" width="300" height="30"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Question" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4al-nj-Hjb">
-                                <rect key="frame" x="160" y="273" width="300" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Subject" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-8Y-p7n">
+                                <rect key="frame" x="150" y="178" width="300" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="02c-fp-QCE"/>
-                                    <constraint firstAttribute="height" constant="30" id="2A5-pV-26g"/>
+                                    <constraint firstAttribute="width" constant="300" id="nQ8-XO-gj6"/>
+                                    <constraint firstAttribute="height" constant="30" id="sPc-aX-Scc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NV-Ad-oSe">
-                                <rect key="frame" x="234" y="107" width="152" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-DF-NlG">
+                                <rect key="frame" x="224" y="107" width="152" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="eDH-9I-M4g"/>
+                                    <constraint firstAttribute="height" constant="31" id="nbQ-Cs-Ewo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJy-7K-oRZ">
-                                <rect key="frame" x="277" y="467" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uV-1b-H0e">
+                                <rect key="frame" x="267" y="467" width="47" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7lS-1j-Irb"/>
+                                    <constraint firstAttribute="width" constant="47" id="RPM-Xi-cTN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
                                 <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="sendButtonTapped:" destination="p1G-0T-uhI" eventType="touchUpInside" id="RBK-2T-crR"/>
-                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-5v-BWl">
-                                <rect key="frame" x="212" y="520" width="197" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JA1-ig-WYU">
+                                <rect key="frame" x="202" y="520" width="197" height="60"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-wU-EsT">
-                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-ei-Mmh">
+                                        <rect key="frame" x="0.5" y="0.0" width="196.5" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-g8-D4o">
-                                                <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-bp-JlX">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9R-vq-zvh">
-                                                <rect key="frame" x="66" y="0.0" width="131" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-QD-JQp">
+                                                <rect key="frame" x="65.5" y="0.0" width="131" height="30"/>
                                                 <state key="normal" title="(+1) 224 432-7647"/>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-rq-TQN">
-                                        <rect key="frame" x="0.0" y="30" width="196" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNd-4E-0rY">
+                                        <rect key="frame" x="0.5" y="30" width="196" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax     : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woK-RI-Nu9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fax     : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTi-1l-Mbo">
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
                                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abx-JG-ZWe">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmq-qb-dtn">
                                                 <rect key="frame" x="65" y="0.0" width="131" height="30"/>
                                                 <state key="normal" title="(+1) 224 432-7647"/>
                                             </button>
@@ -415,34 +405,38 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="D4L-KJ-shc">
+                                <rect key="frame" x="150" y="230" width="300" height="198"/>
+                                <color key="backgroundColor" red="0.70850139519999999" green="0.70020002150000005" blue="0.71628393310000005" alpha="0.19" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="riQ-K8-Eah" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="1hs-BR-yOH"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="Fv4-g7-hiH" secondAttribute="leading" id="AkM-RB-Sd0"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="v2p-ja-CIC" secondAttribute="leading" id="Geq-9I-VKY"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="top" secondItem="OE0-Dg-V9Z" secondAttribute="top" constant="273" id="Hef-EW-jan"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="top" secondItem="riQ-K8-Eah" secondAttribute="bottom" constant="8" symbolic="YES" id="I41-Nc-6GI"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="leading" secondItem="riQ-K8-Eah" secondAttribute="leading" id="RDJ-5H-tAx"/>
-                            <constraint firstItem="4al-nj-Hjb" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="UUh-z3-4ES"/>
-                            <constraint firstItem="4NV-Ad-oSe" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="Y8U-25-Oir"/>
-                            <constraint firstItem="kJy-7K-oRZ" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="ehG-2W-5VO"/>
-                            <constraint firstItem="Fv4-g7-hiH" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="qSO-Wh-B7f"/>
-                            <constraint firstItem="WfN-5v-BWl" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="rhT-iD-653"/>
-                            <constraint firstItem="v2p-ja-CIC" firstAttribute="centerX" secondItem="OE0-Dg-V9Z" secondAttribute="centerX" id="wmg-Yw-a5E"/>
+                            <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="MQv-DF-NlG" secondAttribute="centerX" id="4ky-Zv-bT9"/>
+                            <constraint firstItem="JA1-ig-WYU" firstAttribute="centerX" secondItem="D4L-KJ-shc" secondAttribute="centerX" id="93g-DV-iYB"/>
+                            <constraint firstItem="D4L-KJ-shc" firstAttribute="top" secondItem="aq8-8Y-p7n" secondAttribute="bottom" constant="22" id="FeF-3W-9kQ"/>
+                            <constraint firstItem="5uV-1b-H0e" firstAttribute="top" secondItem="D4L-KJ-shc" secondAttribute="bottom" constant="39" id="Nkn-pu-BiL"/>
+                            <constraint firstItem="aq8-8Y-p7n" firstAttribute="leading" secondItem="D4L-KJ-shc" secondAttribute="leading" id="Ubj-Iz-h6I"/>
+                            <constraint firstItem="JA1-ig-WYU" firstAttribute="top" secondItem="5uV-1b-H0e" secondAttribute="bottom" constant="23" id="eY6-M5-dcy"/>
+                            <constraint firstItem="D4L-KJ-shc" firstAttribute="trailing" secondItem="aq8-8Y-p7n" secondAttribute="trailing" id="gXs-N0-brM"/>
+                            <constraint firstAttribute="bottom" secondItem="JA1-ig-WYU" secondAttribute="bottom" constant="20" symbolic="YES" id="ki9-YI-5O9"/>
+                            <constraint firstItem="JA1-ig-WYU" firstAttribute="leading" secondItem="1qF-j5-wQh" secondAttribute="leading" constant="202" id="mpH-r9-vs1"/>
+                            <constraint firstItem="5uV-1b-H0e" firstAttribute="leading" secondItem="1qF-j5-wQh" secondAttribute="leading" constant="267" id="pSZ-lQ-emD"/>
+                            <constraint firstItem="aq8-8Y-p7n" firstAttribute="top" secondItem="MQv-DF-NlG" secondAttribute="bottom" constant="40" id="tTH-vM-Qkl"/>
+                            <constraint firstItem="MQv-DF-NlG" firstAttribute="top" secondItem="pKp-k6-byp" secondAttribute="bottom" constant="43" id="z1j-ZF-Frz"/>
+                            <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="1qF-j5-wQh" secondAttribute="centerX" id="ztK-tG-ASM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailText" destination="riQ-K8-Eah" id="JIC-eY-EJS"/>
-                        <outlet property="nameText" destination="v2p-ja-CIC" id="tZI-gc-gIW"/>
-                        <outlet property="phoneText" destination="Fv4-g7-hiH" id="Fij-0x-Sjv"/>
-                        <outlet property="questionText" destination="4al-nj-Hjb" id="D7a-Y9-Cq7"/>
-                        <outlet property="subject" destination="4al-nj-Hjb" id="VfT-bV-jjS"/>
+                        <outlet property="body" destination="D4L-KJ-shc" id="tV3-tn-jyp"/>
+                        <outlet property="subject" destination="aq8-8Y-p7n" id="6nG-CE-Eu2"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dKg-MA-jnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tF-Or-jPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="1147"/>
+            <point key="canvasLocation" x="2524" y="1102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWV-nA-sd9">
