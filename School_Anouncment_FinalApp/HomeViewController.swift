@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
     var B4text = ""
     var dayCounter = "C"
     let defaults = NSUserDefaults.standardUserDefaults()
-    let url = "https://google.com"
+    let url = "http://www.sas.edu.sg/page.cfm?p=651"
     
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
         webView.loadRequest(request)
         checkDay()
         checkTime()
-        if dayCounter == "A" {
+        if dayCounter == "Day: A" {
             let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
             let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
             var aDayArray : Array = (myNewSchedule?.classesA)!
@@ -92,10 +92,10 @@ class HomeViewController: UIViewController {
             }
         }
         if Int(finalDifference)! % 2 == 0 {
-            dayCounter = "A"
+            dayCounter = "Day: A"
         }
         else{
-            dayCounter = "B"
+            dayCounter = "Day: B"
         }
     }
     
