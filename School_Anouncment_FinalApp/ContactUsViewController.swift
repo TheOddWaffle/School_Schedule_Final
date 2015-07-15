@@ -10,14 +10,20 @@ import UIKit
 import MessageUI
 
 class ContactUsViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
-
-   
+    
+    
     @IBOutlet weak var subject: UITextField!
     
     
     @IBOutlet weak var body: UITextView!
     
     @IBAction func sendMail(sender: UIButton) {
+        var picker = MFMailComposeViewController()
+        picker.mailComposeDelegate = self
+        picker.setSubject(subject.text!)
+        picker.setMessageBody(body.text, isHTML: true)
+        
+        presentViewController(picker, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -41,16 +47,14 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
     }
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         body.text = textView.text
-    
-    if text == "\n" {
-    textView.resignFirstResponder()
-    
-    return false
         
-    }
-    
-    return true
-        
+        if text == "\n" {
+            textView.resignFirstResponder()
+            
+            return false
+            
+        }
+       return true
     }
 }
 
