@@ -15,4 +15,7 @@ class ContactUsViewController: UIViewController {
     }
     @IBOutlet weak var subject: UITextField!
     @IBOutlet weak var body: UITextView!
+    @IBAction func sendButton(sender: AnyObject) {
+    }
+    
 }
