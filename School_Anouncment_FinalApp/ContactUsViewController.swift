@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ContactUsViewController: UIViewController {
+class ContactUsViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBOutlet weak var subject: UITextField!
+    
+    
     @IBOutlet weak var body: UITextView!
+    
+    
 }
