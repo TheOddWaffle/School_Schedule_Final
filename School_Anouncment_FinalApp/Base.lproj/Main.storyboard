@@ -331,6 +331,7 @@
                         <outlet property="class3" destination="jte-wy-uh7" id="RFk-Vk-MZj"/>
                         <outlet property="class4" destination="wU9-Y1-xhO" id="Sss-iS-X21"/>
                         <outlet property="dayAorB" destination="BtC-tj-6u9" id="aRV-pA-Frq"/>
+                        <outlet property="webView" destination="aSz-N6-qWl" id="ChX-P4-diw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5i6-od-eBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
