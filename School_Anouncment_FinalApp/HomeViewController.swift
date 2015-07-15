@@ -19,6 +19,11 @@ class HomeViewController: UIViewController {
     @IBOutlet var class2: UILabel!
     @IBOutlet var class3: UILabel!
     @IBOutlet var class4: UILabel!
+    @IBOutlet var class1Image: UIImageView!
+    @IBOutlet var class2Image: UIImageView!
+    @IBOutlet var class3Image: UIImageView!
+    @IBOutlet var class4Image: UIImageView!
+    
     var A1text = ""
     var A2text = ""
     var A3text = ""
@@ -41,11 +46,8 @@ class HomeViewController: UIViewController {
         let requestURL = NSURL(string:url)
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
-        
-
-        
-        
         checkDay()
+        //checkTime()
         if dayCounter == "A" {
             let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
             let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
@@ -96,5 +98,72 @@ class HomeViewController: UIViewController {
         else{
             dayCounter = "B"
         }
+    }
+    
+    func checkTime() {
+        let dateObject = NSDate()
+        let timeFormatter = NSDateFormatter()
+        timeFormatter.timeStyle = .MediumStyle
+        let timeString = timeFormatter.stringFromDate(dateObject)
+        let timeArr = split(timeString.characters){$0 == ":"}.map{String($0)}
+        if Int(timeArr[0]) == 8 {
+            if Int(timeArr[1]) > 9 {
+                
+                    class1Image.hidden = false
+                    class2Image.hidden = true
+                    class3Image.hidden = true
+                    class4Image.hidden = true
+                
+            }
+        }
+        else if Int(timeArr[0]) == 9 && Int(timeArr[1]) < 30 {
+            class1Image.hidden = false
+            class2Image.hidden = true
+            class3Image.hidden = true
+            class4Image.hidden = true
+        }
+        else if Int(timeArr[0]) == 10 {
+            class1Image.hidden = true
+            class2Image.hidden = false
+            class3Image.hidden = true
+            class4Image.hidden = true
+        }
+        else if Int(timeArr[0]) == 11 && Int(timeArr[1]) < 20 {
+            class1Image.hidden = true
+            class2Image.hidden = false
+            class3Image.hidden = true
+            class4Image.hidden = true
+        }
+        else if Int(timeArr[0]) == 11 && Int(timeArr[1]) > 20 {
+            class1Image.hidden = true
+            class2Image.hidden = true
+            class3Image.hidden = false
+            class4Image.hidden = true
+        }
+        else if Int(timeArr[0]) == 12 && Int(timeArr[1]) < 46 {
+            class1Image.hidden = true
+            class2Image.hidden = true
+            class3Image.hidden = false
+            class4Image.hidden = true
+        }
+        else if Int(timeArr[0]) == 1 && Int(timeArr[1]) > 35 {
+            class1Image.hidden = true
+            class2Image.hidden = true
+            class3Image.hidden = true
+            class4Image.hidden = false
+        }
+        else if Int(timeArr[0]) == 2 && Int(timeArr[1]) < 55 {
+            class1Image.hidden = true
+            class2Image.hidden = true
+            class3Image.hidden = true
+            class4Image.hidden = false
+        }
+        else {
+            class1Image.hidden = true
+            class2Image.hidden = true
+            class3Image.hidden = true
+            class4Image.hidden = true
+        }
+            
     }
 }
