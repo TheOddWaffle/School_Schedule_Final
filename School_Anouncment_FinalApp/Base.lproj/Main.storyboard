@@ -59,10 +59,17 @@
                                     <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gLj-eq-wyC"/>
                                 </connections>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="School Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFQ-IQ-6k2">
+                                <rect key="frame" x="215" y="438" width="171" height="29"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XsG-wU-QjR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="89b-H0-LW6"/>
+                            <constraint firstItem="mFQ-IQ-6k2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AVK-3x-Wfh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F7q-WT-EoG" secondAttribute="trailing" constant="-20" id="OHx-78-bL7"/>
                             <constraint firstItem="F7q-WT-EoG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Rb2-Lc-BO3"/>
                             <constraint firstItem="f8x-90-he5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jrV-Nj-Sqi"/>
