@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var class2Image: UIImageView!
     @IBOutlet var class3Image: UIImageView!
     @IBOutlet var class4Image: UIImageView!
+    
     var name = ""
     var school = ""
     var A1text = ""
@@ -35,6 +36,7 @@ class HomeViewController: UIViewController {
     var B3text = ""
     var B4text = ""
     var dayCounter = "C"
+    
     let defaults = NSUserDefaults.standardUserDefaults()
     let url = "http://www.sas.edu.sg/page.cfm?p=651"
     
@@ -124,11 +126,10 @@ class HomeViewController: UIViewController {
         if Int(timeArr[0]) == 8 {
             if Int(timeArr[1]) > 9 {
                 
-                    class1Image.hidden = false
-                    class2Image.hidden = true
-                    class3Image.hidden = true
-                    class4Image.hidden = true
-                
+                class1Image.hidden = false
+                class2Image.hidden = true
+                class3Image.hidden = true
+                class4Image.hidden = true
             }
         }
         else if Int(timeArr[0]) == 9 && Int(timeArr[1]) < 30 {
@@ -180,6 +181,5 @@ class HomeViewController: UIViewController {
             class4Image.hidden = true
             print("nothing")
         }
-            
     }
 }

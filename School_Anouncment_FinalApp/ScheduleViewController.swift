@@ -34,7 +34,7 @@ class ScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func onDoneButtonPressed(sender: AnyObject) {
         A1text = A1.text!
         A2text = A2.text!
@@ -48,8 +48,8 @@ class ScheduleViewController: UIViewController {
         let mySchedule = Schedule(classListADay: [A1text, A2text, A3text, A4text], classListBDay: [B1text, B2text, B3text, B4text], start: starterDate)
         save(mySchedule, key: "mySchedule")
         self.performSegueWithIdentifier("segue1", sender: ScheduleViewController.self)
-        
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! HomeViewController
         dvc.school = school

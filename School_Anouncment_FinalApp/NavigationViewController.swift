@@ -9,11 +9,11 @@
 import UIKit
 
 class NavigationViewController: UINavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
     override func viewWillAppear(animated: Bool) {
         print("hello")
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -24,6 +24,5 @@ class NavigationViewController: UINavigationController {
         else {
             print("2")
         }
-
-}
+    }
 }

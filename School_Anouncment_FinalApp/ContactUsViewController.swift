@@ -13,10 +13,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
     
     
     @IBOutlet weak var subject: UITextField!
-    
-    
     @IBOutlet weak var body: UITextView!
-    
     @IBAction func sendMail(sender: UIButton) {
         var picker = MFMailComposeViewController()
         picker.mailComposeDelegate = self
@@ -45,6 +42,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
         
         return true
     }
+    
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         body.text = textView.text
         
@@ -52,9 +50,7 @@ class ContactUsViewController: UIViewController, MFMailComposeViewControllerDele
             textView.resignFirstResponder()
             
             return false
-            
         }
-       return true
+        return true
     }
 }
-

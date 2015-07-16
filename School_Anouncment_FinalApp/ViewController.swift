@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var startDate : NSDate!
-
+    
     @IBOutlet var schoolText: UITextField!
     @IBOutlet var nameText: UITextField!
     @IBOutlet var uiDatePicker: UIDatePicker!
@@ -24,23 +24,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         name = nameText.text!
         school = schoolText.text!
-        
     }
     
-    
-    
     /*override func viewWillAppear(animated: Bool) {
-        print("hello")
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let dataCameBack = defaults.objectForKey("mySchedule"){
-            self.performSegueWithIdentifier("initialToHome", sender: self)
-            print("1")
-        }
-        else {
-            print("2")
-        } 
-        
+    print("hello")
+    let defaults = NSUserDefaults.standardUserDefaults()
+    if let dataCameBack = defaults.objectForKey("mySchedule"){
+    self.performSegueWithIdentifier("initialToHome", sender: self)
+    print("1")
+    }
+    else {
+    print("2")
+    }
     }*/
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "scheduleSegue"){
             var dvc = segue.destinationViewController as! ScheduleViewController
@@ -49,9 +46,7 @@ class ViewController: UIViewController {
             dvc.name = name
         }
         else{
-            
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,4 +54,3 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
