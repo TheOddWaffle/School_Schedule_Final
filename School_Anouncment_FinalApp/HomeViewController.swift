@@ -38,6 +38,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //retreives Schedule object from NSUserDefaults
         let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
         let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
         
@@ -45,8 +46,14 @@ class HomeViewController: UIViewController {
         let requestURL = NSURL(string:url)
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
+        
+        //checks if A day or B day
         checkDay()
+        
+        //checks the time when app opens and indicates which class the student should be in
         checkTime()
+        
+        //takes appropriate schedule according to what day it is
         if dayCounter == "Day: A" {
             let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
             let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
