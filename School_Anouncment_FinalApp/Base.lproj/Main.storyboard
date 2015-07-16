@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="398"/>
+            <point key="canvasLocation" x="1103" y="398"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="Meg-vj-bdH">
@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8R-Ts-Jmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="62"/>
+            <point key="canvasLocation" x="1859" y="-70"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="RkV-pK-hBC">
@@ -259,7 +259,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.72482828252008757" blue="0.4146218317754724" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.68413596392225462" blue="0.41253559402308726" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="rqE-gE-chD" firstAttribute="centerX" secondItem="StN-XY-6c9" secondAttribute="centerX" id="x2U-La-uhC"/>
                                 </constraints>
@@ -281,7 +281,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.56430184916487847" green="0.85247123932923141" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.33155867332467304" green="0.72319363815064452" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="jte-wy-uh7" firstAttribute="centerX" secondItem="74z-VA-POk" secondAttribute="centerX" id="Bi7-5W-JF8"/>
                                     <constraint firstItem="i9A-WD-dLE" firstAttribute="centerX" secondItem="74z-VA-POk" secondAttribute="centerX" id="zxG-tV-Xrl"/>
@@ -334,11 +334,24 @@
                                 <rect key="frame" x="502" y="72" width="78" height="30"/>
                                 <state key="normal" title="Contact Us"/>
                                 <connections>
-                                    <segue destination="dAA-xa-Tt4" kind="show" id="cOj-k9-i2E"/>
+                                    <segue destination="dAA-xa-Tt4" kind="show" id="jKa-vD-Su3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Special Schedule : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-3u-95X">
+                                <rect key="frame" x="13" y="266" width="121" height="30"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="No Anouncments.           Enjoy your summer break!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-Qb-he5">
+                                <rect key="frame" x="157" y="292" width="287" height="78"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yqP-Ja-aQI" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="69" id="1bB-VL-oDy"/>
                             <constraint firstItem="StN-XY-6c9" firstAttribute="leading" secondItem="YmN-zH-1pY" secondAttribute="trailing" constant="8" id="2ew-Pz-QnR"/>
@@ -356,6 +369,7 @@
                             <constraint firstItem="aSz-N6-qWl" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-20" id="U59-yQ-YSa"/>
                             <constraint firstItem="vLU-QW-aYi" firstAttribute="top" secondItem="nbv-QA-d3D" secondAttribute="bottom" constant="8" id="XaY-66-qeF"/>
                             <constraint firstItem="yqP-Ja-aQI" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-7" id="asq-UZ-E0m"/>
+                            <constraint firstItem="fUx-Qb-he5" firstAttribute="centerX" secondItem="exj-L3-cuY" secondAttribute="centerX" id="bB4-lz-1gB"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="width" secondItem="StN-XY-6c9" secondAttribute="width" id="jNp-Mq-DeD"/>
                             <constraint firstItem="Frc-0d-5Fd" firstAttribute="leading" secondItem="74z-VA-POk" secondAttribute="trailing" constant="8" id="oZI-oW-iLk"/>
                             <constraint firstItem="YmN-zH-1pY" firstAttribute="leading" secondItem="exj-L3-cuY" secondAttribute="leadingMargin" constant="-7" id="owT-CZ-kzc"/>
@@ -474,7 +488,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JA1-ig-WYU" firstAttribute="top" secondItem="vva-4h-9KP" secondAttribute="bottom" constant="31" id="3bC-sD-0jJ"/>
                             <constraint firstItem="aq8-8Y-p7n" firstAttribute="centerX" secondItem="MQv-DF-NlG" secondAttribute="centerX" id="4ky-Zv-bT9"/>
@@ -508,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tF-Or-jPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="1102"/>
+            <point key="canvasLocation" x="2627" y="1094"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWV-nA-sd9">
