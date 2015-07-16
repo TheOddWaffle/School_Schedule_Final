@@ -12,6 +12,8 @@ import Foundation
 class HomeViewController: UIViewController {
     
     
+    @IBOutlet var schoolLabel: UILabel!
+    @IBOutlet var nameLabel: UILabel!
     @IBOutlet var webView: UIWebView!
     @IBOutlet var dayAorB: UILabel!
     @IBOutlet var class1: UILabel!
@@ -22,7 +24,8 @@ class HomeViewController: UIViewController {
     @IBOutlet var class2Image: UIImageView!
     @IBOutlet var class3Image: UIImageView!
     @IBOutlet var class4Image: UIImageView!
-    
+    var name = ""
+    var school = ""
     var A1text = ""
     var A2text = ""
     var A3text = ""
@@ -38,6 +41,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //sets name
+        schoolLabel.text = school
+        nameLabel.text = name
+        print(name)
+        print("happy")
+        
+        //retreives Schedule object from NSUserDefaults
         let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
         let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule
         
@@ -45,8 +55,14 @@ class HomeViewController: UIViewController {
         let requestURL = NSURL(string:url)
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
+        
+        //checks if A day or B day
         checkDay()
+        
+        //checks the time when app opens and indicates which class the student should be in
         checkTime()
+        
+        //takes appropriate schedule according to what day it is
         if dayCounter == "Day: A" {
             let dataCameBack = defaults.objectForKey("mySchedule") as! NSData
             let myNewSchedule = NSKeyedUnarchiver.unarchiveObjectWithData(dataCameBack) as? Schedule

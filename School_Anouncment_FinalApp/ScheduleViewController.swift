@@ -17,6 +17,8 @@ class ScheduleViewController: UIViewController {
     var B2text = ""
     var B3text = ""
     var B4text = ""
+    var school = ""
+    var name = ""
     var textArray : String!
     var starterDate : NSDate!
     
@@ -47,5 +49,10 @@ class ScheduleViewController: UIViewController {
         save(mySchedule, key: "mySchedule")
         self.performSegueWithIdentifier("segue1", sender: ScheduleViewController.self)
         
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! HomeViewController
+        dvc.school = school
+        dvc.name = name
     }
 }

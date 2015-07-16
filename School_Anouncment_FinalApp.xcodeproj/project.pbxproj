@@ -15,6 +15,7 @@
 		3C6FC00B1B50553800BB125E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FC00A1B50553800BB125E /* ScheduleViewController.swift */; };
 		3C6FC00D1B50554B00BB125E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6FC00C1B50554B00BB125E /* HomeViewController.swift */; };
 		3CF84DD21B56B0DD00B111FB /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF84DD11B56B0DD00B111FB /* ContactUsViewController.swift */; };
+		F34CD3931B57F3B200DC5435 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CD3921B57F3B200DC5435 /* NavigationViewController.swift */; };
 		F3B10B701B543601003ED35F /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10B6F1B543601003ED35F /* Schedule.swift */; };
 		F3B10B721B54384D003ED35F /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B10B711B54384D003ED35F /* Functions.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		3C6FC00A1B50553800BB125E /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		3C6FC00C1B50554B00BB125E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3CF84DD11B56B0DD00B111FB /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		F34CD3921B57F3B200DC5435 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		F3B10B6F1B543601003ED35F /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = ../Schedule.swift; sourceTree = "<group>"; };
 		F3B10B711B54384D003ED35F /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				F3B10B711B54384D003ED35F /* Functions.swift */,
 				3C6FBFFF1B503E7200BB125E /* Assets.xcassets */,
 				3C6FBFFC1B503E7200BB125E /* Main.storyboard */,
+				F34CD3921B57F3B200DC5435 /* NavigationViewController.swift */,
 				3CF84DD11B56B0DD00B111FB /* ContactUsViewController.swift */,
 				3C6FC0011B503E7200BB125E /* LaunchScreen.storyboard */,
 				3C6FC0041B503E7200BB125E /* Info.plist */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34CD3931B57F3B200DC5435 /* NavigationViewController.swift in Sources */,
 				3C6FC00B1B50553800BB125E /* ScheduleViewController.swift in Sources */,
 				3C6FBFFB1B503E7200BB125E /* ViewController.swift in Sources */,
 				3CF84DD21B56B0DD00B111FB /* ContactUsViewController.swift in Sources */,
